@@ -1,0 +1,89 @@
+:root {
+  --sidebarWidth: 270px;
+}
+.admin__sidebar {
+  width: var(--sidebarWidth);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--light);
+  transition: 0.2s;
+  border-bottom-right-radius: 1rem;
+}
+
+.admin__sidebar__header {
+  width: 100%;
+  height: 75px;
+  margin-left: 1.5rem;
+  padding: 1rem;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+.admin__sidebar__header img {
+  width: 50px;
+  margin-right: 20px;
+}
+.admin__sidebar__header h3 {
+  position: absolute;
+  top: 1.75rem;
+  left: 5.5rem;
+}
+
+.admin__links {
+  width: 80%;
+  margin: 0.8rem 0;
+  padding: 0.5rem 1rem;
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: var(--colorText);
+  border-radius: 1rem;
+  background-color: var(--colorBGCard);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  transition: 0.2s;
+}
+
+.admin_sidebar_icon {
+  font-size: 1.5rem;
+  position: relative;
+  top: 4px;
+}
+
+.admin__links:hover {
+  background-color: var(--colorHoverBGCard);
+}
+
+.admin__sidebar .active {
+  background-color: var(--colorHoverBGCard);
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
+
+/* Medium devices (landscape tablets, 992px and down) */
+@media only screen and (max-width: 992px) {
+}
+@media only screen and (max-width: 765px) {
+  .admin__sidebar {
+    --sidebarWidth: 70px;
+    padding: 0;
+  }
+  .admin__sidebar__header h3 {
+    display: none;
+  }
+  .admin__sidebar__header img {
+    width: 40px;
+    position: absolute;
+    left: 1rem;
+  }
+  .admin__links .opton__text {
+    display: none;
+  }
+}
+@media only screen and (max-width: 575px) {
+}

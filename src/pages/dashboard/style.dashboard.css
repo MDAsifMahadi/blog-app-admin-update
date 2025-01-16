@@ -1,0 +1,10 @@
+.dashbord {
+  display: grid;
+  grid-template-columns: var(--sidebarWidth) 1fr;
+}
+
+@media only screen and (max-width: 765px) {
+  .dashbord {
+    --sidebarWidth: 70px;
+  }
+}

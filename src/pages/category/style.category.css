@@ -1,0 +1,54 @@
+.li {
+  margin: 0.25rem 0;
+  padding: 0.5rem;
+  background-color: var(--colorListBG);
+  border-radius: 0.25rem;
+  transition: all 0.2s;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.li:hover {
+  background-color: var(--colorHoverBGCard);
+  border-radius: 0.5rem;
+}
+.li .name {
+  width: 10rem;
+  background-color: #97a5a357;
+  padding: 0.2rem;
+  border-radius: 0.25rem;
+}
+
+.mini-btn {
+  padding: 0.5rem 0.5rem;
+  border-radius: 0.5rem;
+  background-color: var(--colorAccent);
+  color: var(--light);
+  font-size: 17px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.mini-btn:hover {
+  background-color: var(--colorDefaultLink);
+}
+
+@media screen and (max-width: 768px) {
+  .li {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .li span {
+    margin-top: 1rem;
+  }
+  .li .name {
+    margin-top: 0.5rem;
+  }
+  .mini-btn {
+    margin-top: 0.5rem;
+  }
+  .li .mini-btn {
+    position: absolute;
+    right: 4rem;
+  }
+}

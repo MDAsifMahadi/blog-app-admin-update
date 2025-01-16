@@ -1,0 +1,30 @@
+.card_container {
+  width: 99%;
+  height: 100vh;
+  display: grid;
+  overflow-y: auto;
+}
+
+@media only screen and (min-width: 1200px) {
+  .card_container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .card_container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .card_container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .card_container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

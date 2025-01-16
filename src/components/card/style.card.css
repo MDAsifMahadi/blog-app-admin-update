@@ -1,0 +1,81 @@
+.card {
+  max-width: 500px;
+  padding: 1rem;
+  padding-bottom: 3rem;
+  margin: 0.5rem;
+  border-radius: 1rem;
+  background-color: var(--colorHoverBGCard);
+  border: var(--BoxBorder);
+  transition: 0.15s;
+  position: relative;
+}
+.card__header {
+  height: 4rem;
+}
+.pera {
+  margin-top: 2rem;
+  padding: 1rem;
+}
+.post {
+  cursor: pointer;
+}
+.title {
+  width: 70%;
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  color: var(--colorTitle);
+}
+
+.writer__name {
+  margin-bottom: 10px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  text-align: start;
+  line-height: 1.8rem;
+  color: var(--colorText);
+  position: relative;
+  left: 1.2rem;
+  top: -1rem;
+  transition: 0.2s;
+}
+.feather {
+  position: absolute;
+  top: 0.4rem;
+  left: -1.2rem;
+}
+.isPublic {
+  position: absolute;
+  right: 1rem;
+  top: 10px;
+}
+.isPublic svg {
+  color: var(--colorAccent);
+  position: relative;
+  top: 5px;
+  right: 5px;
+}
+.date {
+  font-weight: 500;
+  font-size: 0.8rem;
+  position: absolute;
+  left: 2.5rem;
+  bottom: 1rem;
+}
+.calendar {
+  position: absolute;
+  left: -1.2rem;
+}
+
+.card_btn {
+  position: absolute;
+  right: 1rem;
+  bottom: 10px;
+}
+
+.writer__name:hover {
+  color: var(--colorAccent);
+}
+.card:hover {
+  background-color: var(--colorHoverBGCard);
+}
