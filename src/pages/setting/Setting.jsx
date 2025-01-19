@@ -116,7 +116,7 @@ const Setting = () => {
           
         </div>
        
-        <span className="mini-btn submit log" onClick={handleLogOut} id="logout">Log out</span>
+        <span className="mini-btn submit" onClick={handleLogOut} id="logout">Log out</span>
       </div>
       <ToastContainer />
     </div>

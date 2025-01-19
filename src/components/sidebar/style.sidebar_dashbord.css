@@ -57,6 +57,13 @@
 .admin__sidebar .active {
   background-color: var(--colorHoverBGCard);
 }
+.header {
+  display: none;
+}
+.sidebar_x {
+  display: none;
+}
+
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
 }
@@ -86,4 +93,44 @@
   }
 }
 @media only screen and (max-width: 575px) {
+  .header {
+    display: inline-block;
+  }
+  .contanier {
+    padding: 0 0.25rem;
+  }
+  .admin__sidebar {
+    position: absolute;
+  }
+  .close {
+    transform: translate(-300px);
+  }
+  .open {
+    transform: translate(0px);
+    --sidebarWidth: 270px;
+    z-index: 1000;
+  }
+
+  .admin__sidebar__header h3 {
+    display: inline;
+  }
+  .admin__sidebar__header img {
+    width: 40px;
+    position: absolute;
+    left: 1rem;
+  }
+  .admin__links .opton__text {
+    display: inline;
+  }
+  .sidebar_x {
+    display: inline;
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    font-weight: 700;
+    font-size: 30px;
+  }
+  .dashbord {
+    grid-template-columns: auto;
+  }
 }

@@ -1,6 +1,6 @@
-.form {
+.setting .form {
   width: 90%;
-  margin: 0 auto;
+  margin: 1rem auto;
   padding: 2rem;
 }
 .form-card {
@@ -21,4 +21,16 @@
   text-align: center;
   top: 0;
   right: 1rem;
+}
+@media only screen and (max-width: 575px) {
+  .form {
+    margin: 0 auto;
+    padding: 1rem;
+  }
+  .form h3 {
+    margin-top: 2.5rem;
+  }
+  .form-card {
+    padding: 1rem 0;
+  }
 }
