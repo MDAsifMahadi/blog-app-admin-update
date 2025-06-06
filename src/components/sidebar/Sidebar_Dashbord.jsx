@@ -1,6 +1,6 @@
 import { IoClose } from "react-icons/io5";
 import { NavLink } from "react-router-dom";
-import logo from "./../../assets/logo.jpg";
+import logo from "./../../assets/logo.png";
 import "./style.sidebar_dashbord.css";
 // icons
 import { FaEdit } from "react-icons/fa";

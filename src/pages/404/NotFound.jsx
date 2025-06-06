@@ -1,5 +1,4 @@
 
-
 const NotFound = () => {
   return (
     <div className="contanier">

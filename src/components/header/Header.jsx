@@ -1,5 +1,5 @@
 import { VscThreeBars } from "react-icons/vsc";
-import img from "./../../assets/logo.jpg";
+import img from "./../../assets/logo.png";
 import "./style.header.css";
 const Header = ({open, setOpen}) => {
   return (
