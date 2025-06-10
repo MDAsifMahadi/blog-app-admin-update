@@ -31,8 +31,12 @@ const Category = () => {
       sound.err()
       return
     }
-    
-    API.post("/categorie", JSON.stringify(newCategory), {
+    const cleaned = {
+      bangla : newCategory.bangla,
+      english : newCategory.english.trim().replace(/\s+/g, '')
+    }
+    console.log(cleaned);
+    API.post("/categorie", JSON.stringify(cleaned), {
       headers: {
         'Content-Type': 'application/json'
       }
